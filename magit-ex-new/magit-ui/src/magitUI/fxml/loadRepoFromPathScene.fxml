@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magitUI.loadRepoFromPathController">
+   <children>
+      <Label layoutX="54.0" layoutY="63.0" text="Choose magit repository to load:" />
+      <Button fx:id="openDirChooser" layoutX="347.0" layoutY="68.0" mnemonicParsing="false" onAction="#openDirChooser" text="Browse" />
+      <Label id="errTxtId" fx:id="errorLable" layoutX="54.0" layoutY="164.0" prefHeight="21.0" prefWidth="348.0" />
+      <TextField fx:id="chosenDirPathForRepo" editable="false" layoutX="55.0" layoutY="125.0" prefHeight="31.0" prefWidth="348.0" promptText="Folder path" />
+      <Button fx:id="loadRepoDirBtn" layoutX="175.0" layoutY="193.0" mnemonicParsing="false" onAction="#tryToLoadRepoFromDir" text="Load repository" />
+   </children>
+</Pane>

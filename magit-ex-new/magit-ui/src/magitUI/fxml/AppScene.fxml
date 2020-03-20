@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="300.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magitUI.MagitController">
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="0.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="151.79998397827148" minWidth="10.0" prefWidth="151.79998397827148" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.2000732421875" minWidth="10.0" percentWidth="0.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="80.2000732421875" minWidth="10.0" percentWidth="0.0" prefWidth="20.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.199951171875" minWidth="10.0" prefWidth="120.199951171875" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="20.0" percentWidth="0.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="20.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label id="repository_title" text="Repository" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label id="remote_operations_title" text="Remote operations" textAlignment="CENTER" underline="true" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label text="User name:" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Label text="Repository location:" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <Label text="Repository name:" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+            <Button fx:id="loadRepoFromXmlBtn" mnemonicParsing="false" onAction="#performLoadRepoFromXml" text="Load repository from xml" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Button fx:id="load_repo_from_path_Btn" mnemonicParsing="false" onAction="#performLoadRepoFromPath" text="Load repository from path" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <Button fx:id="createEmptyRepoBtn" mnemonicParsing="false" onAction="#perfromCreateEmptyRepo" text="Create empty repository" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+            <Button fx:id="cloneBtn" mnemonicParsing="false" onAction="#performClone" text="Clone" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Button fx:id="pullBtn" mnemonicParsing="false" onAction="#performPull" text="Pull" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <Button fx:id="pushBtn" mnemonicParsing="false" onAction="#performPush" text="Push" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Button fx:id="fetchBtn" mnemonicParsing="false" onAction="#performFetch" text="Fetch" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <TextField fx:id="user_name_text" text="Administrator" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <TextField fx:id="repoLocationTxt" editable="false" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <TextField fx:id="repoNameTxt" editable="false" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+            <Button fx:id="saveUserNameBtn" mnemonicParsing="false" onAction="#performChangeUserName" text="Save" GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </top>
+   <left>
+      <GridPane minHeight="150.0" minWidth="150.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="0.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="105.6" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="55.199987792968756" minWidth="10.0" percentWidth="0.0" prefWidth="13.600024414062489" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="29.5999755859375" minWidth="10.0" percentWidth="0.0" prefWidth="29.5999755859375" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="5.0" prefHeight="5.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="5.0" prefHeight="5.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="5.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label text="Branches:" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+            <Button fx:id="showAllBranchesBtn" mnemonicParsing="false" onAction="#performShowAllBranches" text="Show all branches" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+            <Label text="Check out to branch" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+            <Button fx:id="checkoutToBranchBtn" mnemonicParsing="false" onAction="#performCheckoutToBranch" text="Check out" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+            <Label text="Add new branch" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+            <Label text="New branch name:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="newBranchNameField" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="7" />
+            <Button fx:id="AddBranchBtn" mnemonicParsing="false" onAction="#performAddNewBranch" text="Add" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="7" />
+            <Label text="Delete branch" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
+            <Button fx:id="deleteBranchBtn" mnemonicParsing="false" onAction="#performDeleteBranch" text="Delete" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="9" />
+            <Button fx:id="showHeadFilesBtn" mnemonicParsing="false" onMouseClicked="#performShowHeadFiles" text="Show head files" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="14" />
+            <Button fx:id="resetHeadBtn" mnemonicParsing="false" onAction="#performResetHeadBranch" text="Reset head" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="16" />
+            <Label text="Head:" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="11" />
+            <Button fx:id="showOpenChangesBtn" mnemonicParsing="false" onAction="#performShowOpenChanges" text="Show open changes" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="12" />
+            <Label text="New commit" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowIndex="18" />
+            <Label text="Commit message:" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowIndex="19" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="commitMessageTxt" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="20" />
+            <Button fx:id="commitBtn" mnemonicParsing="false" onAction="#performCreateCommit" text="Commit" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="20" />
+            <ComboBox fx:id="checkoutToBranchSpinner" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <ComboBox fx:id="deleteBranchSpinner" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+   </left>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="86.0" prefWidth="670.0">
+               <children>
+                  <Label fx:id="taskMessageLabel" visible="false" />
+                  <ProgressBar fx:id="taskProgressBar" prefHeight="15.0" prefWidth="675.0" progress="0.0" visible="false" />
+                  <Label fx:id="progressPercentLabel" visible="false" />
+               </children>
+            </VBox>
+            <ScrollPane fx:id="graphScrollPane" prefHeight="430.0" VBox.vgrow="ALWAYS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+            <GridPane VBox.vgrow="NEVER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="20.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="104.00003662109373" minWidth="10.0" prefWidth="73.60001220703123" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="169.60003662109375" minWidth="10.0" prefWidth="127.20002441406245" />
+                  <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="20.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="0.0" prefHeight="0.0" vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Label text="Merge with branch :" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                  <Label text="Branch to merge with" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <ChoiceBox fx:id="mergeBranchesSpinner" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+                  <Button fx:id="mergeBtn" mnemonicParsing="false" onMouseClicked="#performMerge" text="Merge" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+                  <ImageView fx:id="magitImage" fitHeight="76.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@AppCss/magitIcon.PNG" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="designAppBtn" mnemonicParsing="false" onAction="#performChangeCss" text="Design app" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+    <stylesheets>
+    </stylesheets>
+</BorderPane>

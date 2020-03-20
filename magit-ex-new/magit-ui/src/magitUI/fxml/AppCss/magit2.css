@@ -1,0 +1,39 @@
+.root {
+    -fx-background-image: url("skyBackground.PNG");
+}
+
+.label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #1d3b8f;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+}
+.combo-box {
+    -fx-font-size: 15px;
+    -fx-text-fill: #1d3b8f;
+    -fx-font-family: "Arial Narrow";
+}
+.text-field {
+    -fx-font-size: 15px;
+    -fx-text-fill: #1d3b8f;
+    -fx-font-family: "Arial Narrow";
+}
+
+.text-field:focused {
+    -fx-font-size: 15px;
+    -fx-text-fill: #1d3b8f;
+    -fx-font-family: "Arial Narrow";
+}
+
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#547db3, #2c2f5c);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2c2f5c, #547db3);
+}

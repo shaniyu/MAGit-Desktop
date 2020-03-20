@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magitUI.CloneController">
+   <children>
+      <Label layoutX="40.0" layoutY="23.0" text="Choose magit repository to clone:" />
+      <Button fx:id="openDirChooser" layoutX="366.0" layoutY="50.0" mnemonicParsing="false" onAction="#chooseRepoToClone" text="Browse" />
+      <Label id="errTxtId" fx:id="errorLableOfPathToCloneTo" layoutX="54.0" layoutY="164.0" prefHeight="21.0" prefWidth="348.0" />
+      <TextField fx:id="chosenRepoToClone" editable="false" layoutX="40.0" layoutY="47.0" prefHeight="31.0" prefWidth="296.0" promptText="Repository path" />
+      <Button fx:id="loadRepoDirBtn" layoutX="366.0" layoutY="138.0" mnemonicParsing="false" onAction="#chooseWhereToClone" text="Browse" />
+      <Label layoutX="42.0" layoutY="106.0" text="Choose path to create the cloned repository:" />
+      <TextField fx:id="chosenDirPathForRepo" editable="false" layoutX="40.0" layoutY="135.0" prefHeight="31.0" prefWidth="296.0" promptText="Folder path" />
+      <Label layoutX="42.0" layoutY="185.0" text="" />
+      <Button layoutX="188.0" layoutY="249.0" mnemonicParsing="false" onAction="#tryToClone" text="Clone" />
+      <Label fx:id="errorLableOfRepo" layoutX="40.0" layoutY="79.0" prefHeight="17.0" prefWidth="288.0" />
+      <Label id="errTxtId" fx:id="errorLableOfNewRepo" layoutX="42.0" layoutY="166.0" prefHeight="17.0" prefWidth="288.0" />
+      <Label layoutX="40.0" layoutY="185.0" text="New repository name:" />
+      <TextField fx:id="newRepoName" layoutX="42.0" layoutY="217.0" prefHeight="25.0" prefWidth="296.0" />
+   </children>
+</Pane>

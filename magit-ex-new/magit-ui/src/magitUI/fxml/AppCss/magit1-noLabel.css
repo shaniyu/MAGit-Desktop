@@ -1,0 +1,35 @@
+.root {
+     -fx-background-color: rgba(105, 136, 101, 0.28);
+}
+
+.label {
+    -fx-font-size: 16px;
+	-fx-font-family: "Century Gothic";
+	-fx-font-weight: bold;
+}
+.combo-box {
+    -fx-font-size: 16px;
+    -fx-text-fill: #1c423a;
+    -fx-font-family: "Century Gothic";
+}
+.text-field {
+    -fx-font-size: 16px;
+    -fx-font-family: "Century Gothic";
+}
+
+.text-field:focused {
+    -fx-font-size: 16px;
+    -fx-font-family: "Century Gothic";
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Century Gothic";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#285752, #759496);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#759496, #285752);
+}

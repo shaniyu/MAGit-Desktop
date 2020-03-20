@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magitUI.RemoteBranchesController">
+   <children>
+      <Label layoutX="33.0" layoutY="35.0" prefHeight="28.0" prefWidth="384.0" text="Select a remote branch from the list above, to track:" />
+      <ScrollPane fx:id="remoteBranchesScroll" layoutX="33.0" layoutY="72.0" prefHeight="129.0" prefWidth="384.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <Label layoutX="33.0" layoutY="18.0" text="There are few remote branches pointed by head." />
+   </children>
+</Pane>

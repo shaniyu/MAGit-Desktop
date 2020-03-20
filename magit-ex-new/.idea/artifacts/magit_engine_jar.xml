@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="magit-engine:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/magit_engine_jar</output-path>
+    <root id="root">
+      <element id="archive" name="magit-engine.jar">
+        <element id="module-output" name="magit-engine" />
+      </element>
+      <element id="library" level="project" name="commons-codec-1.121" />
+      <element id="library" level="project" name="AncestorFinder" />
+      <element id="library" level="project" name="commons-io-2.6" />
+    </root>
+  </artifact>
+</component>

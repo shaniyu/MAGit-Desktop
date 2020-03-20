@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="magit-ui:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/magit_ui_jar</output-path>
+    <root id="root">
+      <element id="archive" name="magit-ui.jar">
+        <element id="module-output" name="magit-ui" />
+        <element id="module-output" name="magit-engine" />
+      </element>
+      <element id="library" level="project" name="AncestorFinder" />
+      <element id="library" level="project" name="fxgraph-0.0.3" />
+    </root>
+  </artifact>
+</component>
