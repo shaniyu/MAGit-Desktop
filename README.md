@@ -1,5 +1,5 @@
-<a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/commitsTree.PNG" width="750" height="550" title="commitTree"></a>
-<a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/openChanges.PNG" width="750" height="550" title="openChanges"></a>
+<kbd><a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/commitsTree.PNG" width="750" height="550" title="commitTree"></a></kbd>
+<kbd><a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/openChanges.PNG" width="750" height="550" title="openChanges"></a></kbd>
 
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
