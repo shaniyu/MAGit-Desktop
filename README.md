@@ -1,5 +1,5 @@
-<a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/commitTree.PNG" title="commitTree"></a>
-<a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/openChanges.PNG" title="openChanges"></a>
+<a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/commitsTree.PNG" title="commitTree"></a>
+<a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/openChangesInRepo.PNG" title="openChanges"></a>
 
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
@@ -9,7 +9,7 @@
 # Magit web app
 
 > the app functions similar to git, includes features such as commit, clone, pull, push, merge, fetch,
-branch managing, load and export repositories using XML.
+branch managing, load and export repositories using XML. <br /> 
 The desktop app was developed using JavaFX, Scene Builder, and an external library for the commit tree graph (fxgraph-0.03).
 
 <!-- > include terms/tags that can be searched -->
@@ -177,4 +177,4 @@ Reach out to me at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>. --> -->
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>. -->
