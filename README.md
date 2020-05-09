@@ -100,7 +100,7 @@ let generateProject = project => {
 
 ## Setup
 
-- To start using Magit by loading an existing repository (rather than creating an empty repository), you can use the example xml file [a exampleRepository.xml]()
+- To start using Magit by loading an existing repository (rather than creating an empty repository), you can use the example xml file [exampleRepository.xml](https://github.com/shaniyu/MAGit-DesktopApp/blob/master/exampleRepository.xml)
 
 ---
 
