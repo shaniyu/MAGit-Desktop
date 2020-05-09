@@ -1,5 +1,5 @@
 <a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/commitTree.PNG" title="commitTree"></a>
-<a><img src="https://github.com/shaniyu/MAGit-WebApp/blob/master/Images/openChanges.PNG" title="openChanges"></a>
+<a><img src="https://github.com/shaniyu/MAGit-DesktopApp/blob/master/Images/openChanges.PNG" title="openChanges"></a>
 
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
@@ -10,8 +10,7 @@
 
 > the app functions similar to git, includes features such as commit, clone, pull, push, merge, fetch,
 branch managing, load and export repositories using XML.
-The web app was developed using JavaScript, HTML, CSS, JQuery and web services via Apache
-Tomcat.
+The desktop app was developed using JavaFX, Scene Builder, and an external library for the commit tree graph (fxgraph-0.03).
 
 <!-- > include terms/tags that can be searched -->
 
@@ -91,36 +90,17 @@ let generateProject = project => {
 
 ## Clone
 
-- Clone this repo to your local machine using `https://github.com/shaniyu/MAGit-WebApp.git`
+- Clone this repo to your local machine using `https://github.com/shaniyu/MAGit-DesktopApp.git`
 
 ## Installation
 
 - Clone the repository to your local machine
 
-- Download tomcat from https://tomcat.apache.org/download-80.cgi. <br /> 
-Pay attention that you are downloading tomcat 8.5.x ! <br />
-Select the zip version suitable for your machine (windows\mac ...)
+- Invoke magit.bat
 
 ## Setup
 
-- Unzip the tomcat zip file to any folder you like (e.g. c:\tomcat) <br />
-Navigate to c:\tomcat\conf\tomcat-users.xml and open it <br />
-Add the below lines (within the <tomcat-users> element):
-
-``` XML
-<role rolename="manager-gui"/>
-<role rolename="admin-gui"/>
-<user username="tomcat" password="tomcat" roles="manager-gui,admin-gui"/>
-``` 
-
-Save the file
-
-- Drop the .WAR file in the root folder of the project inside C:\tomcats\webapps
-
-- Start tomcat by invoking c:\tomcats\bin\startup.bat
-
-- Open your browser (currently supported on chrome) and navigate to:
-http://localhost:8080/magit
+- To start using Magit by loading an existing repository (rather than creating an empty repository), you can use the example xml file [a exampleRepository.xml]()
 
 ---
 
@@ -157,7 +137,7 @@ http://localhost:8080/magit
 > Or Contributors/People
 
 | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
-| :---: |:---:| :---:|
+<!-- | :---: |:---:| :---:|
 | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
 | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
 
@@ -197,4 +177,4 @@ Reach out to me at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>. -->
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>. --> -->
